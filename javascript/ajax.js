@@ -5,9 +5,13 @@ xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
 xhr.send();
 
 function respuesta() {
-    console.log(this.responseText);
+    //console.log(this.responseText);
+    let json = JSON.parse(xhr.responseText);
+    console.log(json);
 }
 xhr.addEventListener("load", respuesta);
+
+
 
 
 //! Ejemplo de addEventListener()
