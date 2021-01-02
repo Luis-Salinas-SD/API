@@ -5,7 +5,7 @@ xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
 xhr.send();
 
 function respuesta() {
-    console.log(this.responseText);
+    console.log(xhr.responseText);
 }
 xhr.addEventListener("load", respuesta);
 
